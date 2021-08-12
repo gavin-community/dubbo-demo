@@ -1,0 +1,21 @@
+# 配置应用服务端口
+server:
+  port: 8087
+
+spring:
+   profiles:
+    active: local
+   redis: 
+    timeout: 1200000
+    lettuce: 
+        pool: 
+            min-idle: 1
+dubbo:
+  application:
+    qos:
+      port: 2770
+  registry: 
+    protocol: redis
+    address: 47.107.139.186:2382
+    username: username
+    password: ytd2014SZ
